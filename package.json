@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js",
-    "start": "nx serve",
+    "start": "node dist/apps/api/main",
     "build": "nx build",
     "test": "nx test"
   },
@@ -37,6 +37,7 @@
     "@angular/compiler-cli": "~14.2.0",
     "@angular/language-service": "~14.2.0",
     "@nestjs/schematics": "^9.0.0",
+    "@nestjs/serve-static": "^3.0.0",
     "@nestjs/testing": "^9.0.0",
     "@nrwl/cli": "15.0.8",
     "@nrwl/cypress": "15.0.8",
@@ -63,5 +64,9 @@
     "ts-jest": "28.0.5",
     "ts-node": "10.9.1",
     "typescript": "~4.8.2"
+  },
+  "engines": {
+    "node": "18.12.0",
+    "npm": "^8.9.0"
   }
 }
