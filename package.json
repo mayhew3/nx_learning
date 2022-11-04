@@ -6,8 +6,9 @@
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js",
     "start": "node dist/apps/api/main",
-    "build": "npx nx run-many --target=build --projects=todos,api",
-    "test": "nx test"
+    "build-todos": "npx nx run-many --target=build --projects=todos,api",
+    "test": "nx test",
+    "heroku-postbuild": "npx nx run-many --target=build --projects=$PROJECT_CLIENT,$PROJECT_SERVER"
   },
   "private": true,
   "dependencies": {
