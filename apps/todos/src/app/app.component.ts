@@ -8,6 +8,7 @@ import {Todo} from '@myorg/data';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  title = 'Todos';
   todos: Todo[] = [];
 
   constructor(private http: HttpClient) {
