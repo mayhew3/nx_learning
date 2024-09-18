@@ -9,6 +9,7 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "target": "node",
+        "webpackConfig": "./webpack.config.js",
         "compiler": "tsc",
         "outputPath": "dist/apps/api",
         "main": "apps/api/src/main.ts",
